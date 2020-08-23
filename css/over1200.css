@@ -1,0 +1,543 @@
+.hero-section-main {
+     /* min-height: 100vh; // this should be min-height, if not as the image is bigger next section will overlap
+
+     display: grid; //&&&&&
+     // grid-template-rows: min-content 1fr min-content;
+     // grid-template-rows: min-content 2fr .75fr;
+     // grid-template-rows: min-content min-content min-content 1fr; */
+     
+     grid-template-columns: 1fr 1fr;
+     /* grid-template-rows: 1fr 1fr ; */
+
+
+}
+
+/* .top-nav {
+     grid-column: 1 / -1;
+} */
+
+.hero-section {
+     align-self: center;
+     justify-self: center;
+     /* text-align: left; */
+
+     padding-left: 5%;
+}
+
+.img-box {
+     /* grid-column: 2 / 3; */
+     /* grid-row: 1 / span 2; */
+}
+
+.btns {
+     /* grid-column: 1 / 2; */
+     /* grid-row: 2 / span 1; */
+    /* align-self: start; */
+    justify-self: start;
+
+    margin: 0;
+}
+
+.hero-section .heading-1 {
+     text-align: left;
+     align-self: end;
+
+     padding-left: 0;
+}
+
+.heading-1 span:first-child{
+     /* font-weight: 400; */
+     font-size: 4rem;
+} 
+
+.services {
+     padding-bottom: 15rem;
+}
+
+
+.bg-text {
+     /* opacity: 0.125; */
+     font-size: 30rem;
+     /* font-weight: 700; */
+     /* letter-spacing: -1rem; */
+     /* // z-index: -999; */
+     /* line-height: .75; */
+     /* // color: rgba(110, 109, 122, 0.45); */
+     /* color: rgba(255, 255, 255, 0.4); */
+     /* // text-shadow: 2px 3px 5px rgba(0,0,0,0.5); */
+     writing-mode: vertical-rl; /*vertical text*/ /*sideways-rl-only support Firefox*/
+     text-orientation: mixed; /*vertical text*/
+}
+    
+.bg-text span:first-child {
+          /* top: -50vh; */
+          left: 5%;       
+}
+
+.bg-text span:last-child {
+          display: none;
+}
+
+.path {
+     /* height: 380px; */
+     height: 22vw;
+}
+.shape { 
+     /* max-width: 50rem; */
+     max-width: 35vw;
+}
+
+.background {
+     background-color: chocolate;
+     position: absolute;
+     height: 100vh;
+     top: 0;
+     /* z-index: ; */
+     width: 25%;
+     right: 0;
+     z-index: 0;
+}
+
+.heading-txt {
+     max-width: 60rem;
+     margin-bottom: 4rem;
+}
+
+.services {
+     position: relative;
+}
+
+.services:before {
+     content: url("../img/feature-bg.png");
+     /* display: block; to make the image and aurthor text on its own line */
+     /* line-height: 0; */
+     position: absolute;
+     /* top: 0; */
+ 
+     /* opacity: .075; */
+     z-index: -100;
+
+     /* top: 50%; */
+     /* left: 50%; */
+     /* transform: translate(-50%, -50%); */
+}
+
+/* copied from "https://web.learncodeonline.in/"=================================================================================== */
+.core-feature-circle {
+     display: block;
+} 
+
+.core-feature-circle .circle1 {
+     right: 1%;
+     top: 0;
+     width: 11%;
+     /* position: absolute; */
+     /* opacity: .3; */
+}
+
+.core-feature-circle img {
+     position: absolute;
+    opacity: .3;
+    -webkit-animation: zoominoutsinglefeatured 4s infinite;
+    animation: zoominoutsinglefeatured 4s infinite;
+}
+
+@keyframes zoominoutsinglefeatured {
+     0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+     }
+
+     50% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+     }
+
+     100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+     }
+}
+/* copied from "https://web.learncodeonline.in/"=================================================================================== */
+
+
+.services-box {
+     display: flex;
+     justify-content: space-between;
+     max-width: 120rem;
+     margin: 0 auto;
+}
+
+.services-box__item {
+     flex: 0 1 24%;
+}
+/*
+.portfolio-box:before {
+     content: url("../img/border-line.png");
+     position: absolute;
+     bottom: -25rem ;
+     right: 10rem;
+}*/
+
+.portfolio { 
+     /* position: relative;  */
+
+     background: #99abcc;
+     padding-left: 0;
+     padding-right: 0;
+
+z-index: 4;     
+}  
+
+.portfolio .heading-2 {
+     color: #3a3a3a;
+}
+
+.portfolio .heading-txt {
+     color: #3a3a3a;
+}
+
+.portfolio .heading-2:after {
+     background-color: #fff;
+}
+
+.mainPerfected-bg-white {
+     background: #fff;
+     transform: skewY(-2.5deg);
+     position: absolute;
+    z-index: 1;
+    height: 70%;
+    width: 100%;
+    /* top: 60%; */
+}
+
+.portfolio-box {
+     position: relative;
+     /* display: flex; */
+     /* flex-wrap: wrap; */
+     /* justify-content: space-between; */
+     margin-bottom: 10rem;
+
+
+     z-index: 4;
+     padding-top: 5rem;
+}
+.txt-works {
+     z-index: 3;
+} 
+
+.portfolio-box__1 {
+     flex: 0 1 24%;
+}
+
+.testimonial-box {
+     max-width: 75%;
+}    
+
+section, footer {
+     padding: 10rem 2.75rem;
+}
+
+/* copied from https://dribbble.com/pro?utm_campaign=2020-03-17&utm_medium=email&utm_source=company-newsletter===============================*/
+
+.pro-intro-img { 
+     position: relative;
+     /* right: calc(751vw * 100 / 1440); */
+     /* top: calc(-66vw * 100 / 1440); */
+
+     /* background-color: yellow;  */
+     z-index: 2;
+     /* margin-top: 10rem; */
+     
+}
+
+/*
+.pro-intro-img { 
+     height: calc(120vw * 100 / 375);
+}*/
+/*
+element.style {
+     transform: translate3d(0px, 0px, 0px);
+     opacity: 1;
+}*/
+/*
+.pro-intro-img img:nth-child(1) {
+     left: calc(52vw * 100 / 1440);
+     width: calc(236vw * 100 / 1440);
+     position: absolute;
+}
+
+.pro-intro-img img:nth-child(1) {
+     top: 0;
+}
+
+.pro-intro-img img {
+     position: absolute;
+     -webkit-box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+     box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+     border-radius: 12px;
+     opacity: 0;
+     will-change: opacity, transform;
+}
+
+.pro-intro-img img:nth-child(2) {
+     top: calc(256vw * 100 / 1440);
+     width: calc(200vw * 100 / 1440);
+     
+}
+
+.pro-intro-img img:nth-child(2) {
+     left: 0;
+}
+
+.pro-intro-img img:nth-child(3) {
+     top: calc(219vw * 100 / 1440);
+     left: calc(163vw * 100 / 1440);
+     width: calc(336vw * 100 / 1440);
+     
+}
+
+.pro-intro-img img:nth-child(4) {
+     top: calc(97vw * 100 / 1440);
+     left: calc(122vw * 100 / 1440);
+     width: calc(244vw * 100 / 1440);
+     
+}
+
+.pro-intro-img img:nth-child(5) {
+     top: calc(43vw * 100 / 1440);
+     left: calc(315vw * 100 / 1440); 
+     width: calc(244vw * 100 / 1440);
+     
+}*/
+
+.skills-box {
+     margin-top: 5rem;
+     /* justify-content: end; */
+}     
+
+.outer {
+     justify-self: end;
+     padding-right: 3rem;
+}
+.main-skill-box {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     max-width: 120rem;
+     margin: 0 auto;
+
+     justify-items: center;
+     align-items: center;
+}
+/* copied from https://dribbble.com/pro?utm_campaign=2020-03-17&utm_medium=email&utm_source=company-newsletter===============================*/
+
+/* .contact {
+     max-width: 120rem;
+     margin: 0 auto;
+} */
+
+
+.team-box {
+     max-width: 90rem;
+     margin: 0 auto;
+}
+
+.team-box__1{
+     flex: 0 1 31%;
+
+     transition: box-shadow .3s ease-in-out;
+}  
+
+.team-box__1:hover{
+     box-shadow: 0 0 12px #aaa;
+} 
+
+     
+/* .team-box__1 {
+     margin: 5rem 0;
+}  
+    */
+
+    .test2525 {
+     margin: 0 auto;
+    }
+
+.scroll-snap-test1 .scroll-snap{
+     min-width: 32%;
+     flex: 0 1 28%;
+}
+
+.about-box__1 {
+     max-width: 70rem;
+     margin: 0 auto;
+}
+
+.section-contact {
+	/* background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../img/731799-PS62GS-221.jpg"); */
+	/* background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)); */
+     /* background-size: cover; */
+     /* padding-bottom: 3rem; to reduse the bottom padding */
+}
+
+.contact {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+
+     max-width: 120rem;
+     margin: 0 auto;
+}
+
+.img-contact {
+     max-height: 70rem;
+     margin-bottom: -12rem;
+
+}
+
+.contact__form {
+     max-width: 45rem;
+     /* margin-left: auto; */
+     /* margin-right: 10rem; to get the exact space as the woman's right hand side */
+}
+
+/*
+.pro-intro-img {
+     padding: 0 25rem 0 25rem;
+}
+
+.main-skill-box {
+     display: flex;
+}
+
+.main-skill-box div{
+     flex: 0 0 45%;
+} 
+*/
+
+.process-box {
+     padding-left: 3%;
+}
+
+.process-main-box-imagecontent {
+     display: flex;
+     justify-content: space-between;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.process-main-box-item {
+     flex: 0 1 47%;
+
+     position: relative;
+}
+
+.process-main-box-item img {
+     padding-top: 5rem;
+}
+
+.process-main-box-item-1 {
+     background-image: linear-gradient(120deg, #ffbb0188, #ffbb0188);
+     position: absolute;
+   /* padding-top: 15rem; */
+   /* padding-right: -5rem; */
+     height: 100%;
+     width: 55%;
+/* // margin: -5rem -5rem -5rem 5rem; */
+     top: 0;
+     left: -5rem;
+     z-index: -1;
+
+     /* box-shadow: 0 0 10px rgba(16,14,23, .1); */
+}
+
+.process-box {     
+     
+}
+
+.price-box__1 {
+     transition: box-shadow .3s ease-in-out; /*copied from https://www.crossrope.com/   */
+}
+
+.price-box__1:hover { /*copied from https://www.crossrope.com/ */
+     box-shadow: 0 0 12px 0 rgba(0,0,0,0.8);
+}
+
+/*footer=====================================================================================================================*/
+.quicklinks-box {
+     display: grid;
+     grid-template-columns: 2fr 1fr 1.5fr .75fr;
+     justify-items: start;
+     
+     /* align-items: flex-start; */
+}
+
+.quicklinks-box .social {
+     border: none;
+}
+
+.quicklinks-box .social .ffa{
+     padding: 0;
+     margin: 0;
+}
+
+.quicklinks-box .quicklinks, .quicklinks-box .support {
+     padding-top: 0;
+     text-align: left;
+}
+
+.quicklinks, .social {
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-between; */
+     align-items: start;
+}
+
+.footer {
+     padding-bottom: 2.5rem;
+}
+
+.quicklinks-box .copy-credit {
+     padding-top: 10rem;
+}
+
+.footer-item-3 {
+     grid-column: 4 / -1;
+}
+
+.footer-item-4 {
+     grid-column: 3 / 4;
+     grid-row: 1 / -1;
+}
+
+.quicklinks-box .support li{
+   
+      justify-content: start;
+}
+
+.quicklinks-box .heading-2 {
+     text-align: left;
+}
+
+.quicklinks-box .heading-2:after {
+     text-align: left;
+     margin: .75rem auto 0 0;
+}
+
+.quicklinks-box .heading-txt {
+     text-align: left;
+     width: 100%;
+     padding-right: 4rem;
+     margin-bottom: 1rem;
+}
+
+.footer .copy-credit {
+     margin-top: 5rem;
+}
+
+/*Price============================================================================================================================*/
+.scroll-snap-test1 {
+     justify-content: center;
+} 
+
+
+
