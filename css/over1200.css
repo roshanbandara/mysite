@@ -224,6 +224,7 @@ z-index: 4;
 }
 .txt-works {
      z-index: 3;
+
 } 
 
 .portfolio-box__1 {
@@ -248,7 +249,8 @@ section, footer {
      /* background-color: yellow;  */
      z-index: 2;
      /* margin-top: 10rem; */
-     
+
+     width: 30rem;
 }
 
 /*
@@ -377,12 +379,16 @@ element.style {
 	/* background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)); */
      /* background-size: cover; */
      /* padding-bottom: 3rem; to reduse the bottom padding */
+
+     padding-bottom: 10rem;
 }
 
 .contact {
      display: flex;
      justify-content: space-around;
      align-items: flex-end;
+
+     flex-direction: row-reverse;
 
      max-width: 120rem;
      margin: 0 auto;
