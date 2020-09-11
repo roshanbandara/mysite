@@ -1,1 +1,275 @@
-.btns{flex-direction:row;justify-content:center}.btn-primary:link,.btn-primary:visited{min-width:22.5rem;margin-right:2rem}.btn-secondry:link,.btn-secondry:visited{min-width:22.5rem}.heading-1 span:nth-child(2){font-size:4.5rem}html{font-size:70%}.hero-section-main{grid-template-rows:1fr min-content 1fr}.bg-text{font-size:20rem}.bg-text span:first-child{left:-20%}.path{height:342.5px}.shape{max-width:45rem}.slide-box1,.slide-box2,.slide-box3,.slide-box4{height:40rem}.services-box{display:flex;justify-content:space-between;max-width:90rem;margin:0 auto;flex-wrap:wrap}.services-box__item{flex:0 1 48%}.portfolio-box{display:flex;flex-wrap:wrap;justify-content:space-between;max-width:120rem;margin:0 auto}.portfolio-box__1{flex:0 1 48.5%}.pro-intro-img{max-width:36.5rem;margin:10rem auto 0 auto}.skills{padding-bottom:15rem}.skills-box{max-width:53rem;margin:3.5rem auto 0 auto}.skills-box .skills-box__1{margin-bottom:0;padding:5rem}.img-contact{max-height:65rem;margin:0 auto;display:block;padding-top:5rem}.team-box{display:flex;flex-wrap:wrap;justify-content:space-around}.team-box__1{flex:0 1 45%}.heading-txt{width:80%;margin:0 auto}.services .svgb{display:none}
+.btns{ 
+  
+     flex-direction: row;
+     justify-content: center;
+}
+
+.btn-primary:link, .btn-primary:visited { /*button primary and secondry put outside of the "btns" because these are re usable.*/
+    min-width: 22.5rem;
+    margin-right: 2rem;
+}
+
+.btn-secondry:link, .btn-secondry:visited {
+     min-width: 22.5rem;
+}
+
+.heading-1 span:nth-child(2) {
+	font-size: 4.5rem;
+	/* line-height: 1.2; */
+}
+
+html {
+     font-size: 70%; /* 10px/16px = 62.5% -> 1rem = 10px // base font size is 10px - if we put 100%, default font size is 16px, which is default. we want 10px for eazy calculations. so we use 62.5% which equals to 10px*/
+}
+
+.hero-section-main {
+     grid-template-rows: 1fr min-content 1fr;
+}
+
+.bg-text {
+     
+     font-size: 20rem;   
+}
+
+.bg-text span:first-child {
+     left: -20%;
+
+}
+
+.path {
+     height: 342.5px;
+}
+.shape { 
+     max-width: 45rem;
+}
+.slide-box1, .slide-box2, .slide-box3, .slide-box4 { 
+     height: 40rem;   
+}
+
+
+.services-box {
+     display: flex;
+     justify-content: space-between;
+     max-width: 90rem;
+     margin: 0 auto;
+     flex-wrap: wrap;
+}
+
+.services-box__item {
+     flex: 0 1 48%;
+
+     /* margin-top: 16rem; */
+}
+
+.portfolio-box {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     max-width: 120rem;
+     margin: 0 auto;
+}
+
+.portfolio-box__1 {
+     flex: 0 1 48.5%;
+}
+
+.pro-intro-img { 
+     max-width: 36.5rem;
+     margin: 10rem auto 0 auto;
+}
+
+.skills {
+     padding-bottom: 15rem ;
+}
+
+
+
+.skills-box {
+     max-width: 53rem;
+     margin: 3.5rem auto 0 auto;
+}
+
+.skills-box .skills-box__1{
+     margin-bottom: 0;
+     padding: 5rem;
+
+}
+
+.skills-box__1 p{
+     /* font-size: 2rem; */
+}
+
+.img-contact {
+     max-height: 65rem;
+     margin: 0 auto;
+     display: block;
+     padding-top: 5rem;
+}
+
+
+
+
+.team-box {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+
+.team-box__1{
+     flex: 0 1 45%;
+}  
+
+.heading-txt {
+
+     width: 80%;
+     /* text-align: center; */
+     margin: 0 auto;
+}
+
+.services .svgb { /* remove the svg image */
+     display: none;
+}
+
+/*-----------------------------------------------------------------------------------------
+Basic responsive layout for all browsers:
+-----------------------------------------------------------------------------------------*/
+/*
+body {
+     max-width: 50em;
+     margin: 0 auto;
+}
+*/
+/*-----------------------------------------------------------------------------------------
+CSS Grid layout for modern browsers:
+-----------------------------------------------------------------------------------------*/
+
+/* feature quary to ask the browser, "Hey, do you support CSS grid? if so run this code, otherwise just ignore everything." */
+/*
+@support (grid-area: auto) {
+
+     @media screen and (min-width: 50em) {
+
+          .body {
+               max-width: none; //if it supports, the above body max-width removed. then it will all fullbread.
+               display: grid;
+               grid-template-columns: 15em auto;
+          }
+     }
+}
+*/
+/*=========================================================================================
+Flexbox stuff
+=========================================================================================*/
+/*
+@media screen and (min-width: 40em) {
+     .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: -1em;
+     }
+
+     .card {
+          flex: 0 1 calc(50% - .5em);
+          margin-bottom: 1em;
+     }
+}
+
+@media screen and (min-width: 60em) {
+     .cards {
+          margin-top: inherits;
+     }
+
+     .card {
+          flex: 0 1 calc(33% - .5em);
+          margin-bottom: 2em;
+     }
+}*/
+
+/*=========================================================================================
+header
+=========================================================================================*/
+/*
+.top-nav { 
+     grid-template-columns: 15rem minmax(57.5rem, 70rem) ;
+     grid-template-rows: min-content;
+     justify-content: space-between;
+}
+
+.top-nav__logo-box {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+}
+
+.top-nav__logo {        
+     height: 7.5rem;  // decrease the logo size
+     box-sizing: content-box;
+     padding: 1rem 0;
+}
+
+.top-nav__links {
+     grid-template-columns: repeat(6, 1fr);
+     align-items: center;   // to center the nav text  and logo vertically 
+
+     grid-row-gap: unset;
+     grid-column-gap: unset;
+}
+
+.top-nav__links > div {
+     box-shadow: none;
+}
+
+@media screen and (min-width: 60em) {
+     .top-nav__link-box a { // nav icon & links
+          flex-direction: row;
+          justify-content: center; // to center the nav text  and logo horizontally 
+     } 
+}
+*/
+/*sticky*/
+/*
+.sticky .top-nav__logo {
+     display: none;
+}*/
+/*
+.sticky .top-nav__logo { //---- , I change .sticky .top-nav__logo-black to .sticky .top-nav__logo affter making nav bar orange
+     box-sizing: content-box;
+     padding: .4rem 0;
+          
+     height: 4.5rem; 
+     width: auto;
+     display: block;
+}
+
+.sticky .top-nav__logo-box {
+     display: block;
+}
+*/
+/*=========================================================================================
+section main
+=========================================================================================*/
+/*
+.grid-gatha-pirith {
+     display: flex;
+     flex-wrap: wrap;    
+}
+
+.grid-gatha-pirith li{
+     flex: 0 1 calc(50% - 1.75rem);
+     margin: 0 .75rem;
+}
+*/
+/* I removed the over1200.css from html, because when it adds it requests two http reqest and I desiced to add below quary to this file also.*/
+/*
+@media screen and (min-width: 75em) {
+     .grid-gatha-pirith li{
+          flex: 0 1 calc(33% - 1.75rem); 
+     }
+}
+
+
+.about, .section-book, .footer-content {
+     max-width: 90rem;
+     margin: 0 auto;
+}
+*/
