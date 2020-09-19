@@ -1414,6 +1414,8 @@ element.style {
       height: 2rem;
       margin-right: 1rem;
       fill: #777777; }
+    .footer .support .tel-icon, .footer .support .mail-icon {
+      margin-right: 0; }
   .footer .social {
     border: .1rem #a4a4a4;
     border-style: solid none; }
@@ -1482,6 +1484,107 @@ element.style {
     transform: translateY(300%); }
   .top-of-page:hover .home-link-top__invisible p {
     top: 40%; }
+
+.mdc-fab {
+  position: fixed;
+  z-index: 50;
+  fill: red;
+  animation: grow 7s infinite ease-in forwards;
+  padding: 1.45rem;
+  border: none;
+  border-radius: 50%;
+  bottom: 2rem;
+  right: 2rem;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2)); }
+
+.ringing-button-icon {
+  animation: ring 7s infinite ease-in forwards;
+  fill: #000;
+  width: 3.25rem;
+  height: 3.25rem; }
+
+@keyframes ring {
+  11% {
+    transform: translateX(0); }
+  12.5% {
+    transform: translateX(0); }
+  13% {
+    transform: translateX(-1px); }
+  13.5% {
+    transform: translateX(1px); }
+  14% {
+    transform: translateX(-1px); }
+  14.5% {
+    transform: translateX(1px); }
+  15% {
+    transform: translateX(-1px); }
+  15.5% {
+    transform: translateX(1px); }
+  16% {
+    transform: translateX(-1px); }
+  16.5% {
+    transform: translateX(1px); }
+  17% {
+    transform: translateX(-1px); }
+  17.5% {
+    transform: translateX(1px); }
+  18% {
+    transform: translateX(-1px); }
+  18.5% {
+    transform: translateX(1px); }
+  19% {
+    transform: translateX(-1px); }
+  19.5% {
+    transform: translateX(1px); }
+  20% {
+    transform: translateX(-1px); }
+  20.5% {
+    transform: translateX(1px); }
+  21% {
+    transform: translateX(-1px); }
+  21.5% {
+    transform: translateX(1px); }
+  22% {
+    transform: translateX(-1px); }
+  22.5% {
+    transform: translateX(1px); }
+  23% {
+    transform: translateX(-1px); }
+  23.5% {
+    transform: translateX(1px); }
+  24% {
+    transform: translateX(-1px); }
+  24.5% {
+    transform: translateX(1px); }
+  25% {
+    transform: translateX(-1px); }
+  25.5% {
+    transform: translateX(1px); }
+  26% {
+    transform: translateX(-1px); }
+  26.5% {
+    transform: translateX(1px); }
+  27% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    background-color: #34c234; }
+  12% {
+    transform: scale(1);
+    background-color: #34c234; }
+  26% {
+    transform: scale(1.15);
+    background-color: #34c234; }
+  29% {
+    transform: scale(1);
+    background-color: #34c234; }
+  100% {
+    transform: scale(1);
+    background-color: #34c234; } }
 
 @-webkit-keyframes slide-down {
   0% {
