@@ -357,7 +357,8 @@
             <figure class="testimonial-box__client">
                <img src="img/lazy/testim-1-lazy.png" alt="client1-headshot" data-src="img/testim-1.png" data-srcset="img/testim-1.png" class="lazy">
                <blockquote>
-                  <p class="testimonial-box__feedback">Transfuture made a point of really understanding our business and adding value in many ways that we did not expect.</p>
+                  <!-- <p class="testimonial-box__feedback">Transfuture made a point of really understanding our business and adding value in many ways that we did not expect.</p> -->
+                  <p class="testimonial-box__feedback">I've worked with Roshan for a long time now. We had a prolonged break due to my circumstances but I'm delighted to be back working with him again now. Very high standard of work and ultra reliable.</p>
                   <cite>
                      <figcaption class="testimonial-box__figcaption">– Jan Danisman</figcaption>
                      <p class="testimonial-box__position">Executive Director, German State of Bavaria U.S. Offices for Economic Development</p>
@@ -368,7 +369,7 @@
             <figure class="testimonial-box__client">
                <img src="img/lazy/testim-2-lazy.png" alt="client2-headshot" data-src="img/testim-2.png" data-srcset="img/testim-2.png" class="lazy">
                <blockquote>
-                  <p class="testimonial-box__feedback">I appreciate Transfuture's ability to adapt as projects change. That's very valuable to me; they're not rigid, which is always a great thing.</p>
+                  <p class="testimonial-box__feedback">Roshan did a timely and careful job on this project. He was accurate, communicative, and even duplicated aesthetic elements like colors that took this job from an A to an A+.</p>
                   <cite>
                      <figcaption class="testimonial-box__figcaption">– Jason Tagg</figcaption>
                      <p class="testimonial-box__position">Director of Digital Development</p>
@@ -379,7 +380,18 @@
             <figure class="testimonial-box__client">
                <img src="img/lazy/testim-3-lazy.png" alt="client3-headshot" data-src="img/testim-3.png" data-srcset="img/testim-3.png" class="lazy">
                <blockquote>
-                  <p class="testimonial-box__feedback">Transfuture helped us take our outdated website and customize it to what we were looking for. Would definitely recommend them to others.</p>
+                  <p class="testimonial-box__feedback">This is my second time working with Roshan - I can't say enough good things about him. He is quick - he understands the job - and he communicates clearly. A job well done!</p>
+                  <cite>
+                     <figcaption class="testimonial-box__figcaption">– Drew Boyd</figcaption>
+                     <p class="testimonial-box__position">Senior Analyst at Match Point Partners</p>
+                  </cite>
+              </blockquote>
+            </figure>
+
+            <figure class="testimonial-box__client">
+               <img src="img/lazy/testim-3-lazy.png" alt="client3-headshot" data-src="img/testim-3.png" data-srcset="img/testim-3.png" class="lazy">
+               <blockquote>
+                  <p class="testimonial-box__feedback">Roshan did an excellent work exactly as I wanted. Actually did he do it better because he added heatmap colors, that I hadn´t thought about. Thanks Roshan I will hire you again.</p>
                   <cite>
                      <figcaption class="testimonial-box__figcaption">– Drew Boyd</figcaption>
                      <p class="testimonial-box__position">Senior Analyst at Match Point Partners</p>
@@ -1044,9 +1056,9 @@
          <h2 class="heading-2 mb-sm">(site name)</h2>
          <p class="heading-txt">About 80% of consumers use the internet to search for products & services they need before they make a purchase, therefore, if you do not exist on the World Wide Web it is critical. It is never too late, call us now.</p>
          <ul class="support ">
-            <li><svg class="quicklinks-box__support-icon"><use xlink:href="img/sprite.svg#icon-phone"></use></svg><a href="tel:0764626410 ">+94 76 4626 410</a></li>
-            <li><svg class="quicklinks-box__support-icon"><use xlink:href="img/sprite.svg#icon-mail"></use></svg><a href="mailto:support@sitename.com"> support@sitename.com </a></li>
-            <li><svg class="quicklinks-box__support-icon"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>+94 123456789</li>
+            <li><svg class="quicklinks-box__support-icon tel-icon"><use xlink:href="img/sprite.svg#icon-phone"></use></svg><a href="tel:0710810625">+94 71-081-0625</a></li>
+            <li><svg class="quicklinks-box__support-icon mail-icon"><use xlink:href="img/sprite.svg#icon-mail"></use></svg><a href="mailto:roshan5500@gmail.com">support@sitename.com</a></li>
+            <li><svg class="quicklinks-box__support-icon"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>+94 71-081-0625</li>
          </ul>
       </div>
       <!-- <img src="img/search.svg" alt="" class=""> -->
@@ -1092,10 +1104,20 @@
          </div>
         
       </div> 
+
+      
+
       <div class="copy-credit-box"></div> 
          <p class="copy-credit">Copyright &copy; 2020 (site name) | Web Design & Development | All Rights Reserved | Privacy.</p>
       
    </footer>
+
+   <!-- ringing-button https://glitch.com/~ringing-button  =============================================================================== -->
+   <button class="mdc-fab mdc-ripple-upgraded" aria-label="Ringing Button">
+      <!-- <span class="mdc-fab__icon material-icons">phone</span> -->
+      <span class="mdc-fab__icon material-icons"><a href="tel:0764626410"><svg class="ringing-button-icon"><use xlink:href="img/sprite.svg#icon-phone1"></use></svg></a></span>
+   </button>
+   <!-- ringing-button https://glitch.com/~ringing-button  =============================================================================== -->
 
    <script src="js/glider.min.js"></script> 
    
@@ -1604,29 +1626,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
    </body>
 </html>  
-
-   const navSlide = () => {
-      const burger = document.querySelector('.burger');
-      const nav = document.querySelector('.nav-links');
-      const navLinks = document.querySelectorAll('.nav-links li');
-      
-      burger.addEventListener('click', () => {
-         //Toggle Nav
-         nav.classList.toggle('nav-active');
-   
-         //Animate Links
-         navLinks.forEach((link, index) => {
-            if(link.style.animation) {
-               link.style.animation = '';
-            } else {
-               link.style.animation = `navLinkFade 0.5s ease forwards ${index / 15 + 0.2}s`;
-            }
-         });
-         //Burger Animation
-         burger.classList.toggle('toggle');
-
-      });
-
-   }
-
-   navSlide();
